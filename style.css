@@ -1,0 +1,30 @@
+.main {
+  margin: 0;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.settings {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: -400px;
+  margin: 0;
+  background-color: #fff;
+}
+
+.settings--active {
+  left: 0;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.header__list {
+  padding: 2px;
+}
+
+.header__item {
+  list-style: none;
+}

@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+  </head>
+  <body class="main">
+    <div class="settings">
+      <form name='data' id="form" action="/" method="GET">
+        <button type="button" class="settings__close btn btn-outline-primary">Closse</button>
+  
+        <div class="row g-2 p-2">
+          <div class="col-auto">
+            <label
+              for="count_of_columns"
+              class="mt-1"
+            >
+              Кількість змійок:
+            </label>
+          </div>
+  
+          <div class="col-auto">
+            <input
+              class="form-control"
+              type="number"
+              id="count_of_columns"
+              name="count_of_columns"
+              value="20"
+            >
+          </div>
+        </div>
+
+        <div class="row g-2 p-2">
+          <div class="col-auto">
+            <label
+              for="column_length"
+              class="mt-1"
+            >
+              Мін. довжина змійки:
+            </label>
+          </div>
+  
+          <div class="col-auto">
+            <input
+              class="form-control"
+              type="number"
+              name="min_length"
+              id="min_length"
+              value="5"
+            >
+          </div>
+        </div>
+  
+        <div class="row g-2 p-2">
+          <div class="col-auto">
+            <label
+              for="max_length"
+              class="mt-1"
+            >
+              Макс. довжина змійки:
+            </label>
+          </div>
+  
+          <div class="col-auto">
+            <input
+              class="form-control"
+              type="number"
+              name="max_length"
+              id="max_length"
+              value="15"
+            >
+          </div>
+        </div>
+  
+  
+        <div class="row g-2 p-2">
+          <div class="col-auto">
+            <label
+              for="font_width"
+              class="mt-1"
+            >
+              Розмір шрифта:
+            </label>
+          </div>
+  
+          <div class="col-auto">
+            <input
+              class="form-control"
+              type="number"
+              id="symbol_size"
+              name="symbol_size"
+              value="30"
+            >
+          </div>
+        </div>
+
+        <div class="row g-2 p-2">
+          <div class="col-auto">
+            <label
+              for="minSpeed"
+              class="mt-1"
+            >
+              Мін. швидкість:
+            </label>
+          </div>
+  
+          <div class="col-auto">
+            <input
+              class="form-control"
+              type="number"
+              id="minSpeed"
+              name="minSpeed"
+              value="1"
+            >
+          </div>
+        </div>
+  
+        <div class="row g-2 p-2">
+          <div class="col-auto">
+            <label
+              for="speed"
+              class="mt-1"
+            >
+              Макс. швидкість:
+            </label>
+          </div>
+  
+          <div class="col-auto">
+            <input
+              class="form-control"
+              type="number"
+              id="speed"
+              name="speed"
+              value="5"
+            >
+          </div>
+        </div>
+  
+        <div class="row g-2 p-2">
+          <div class="col-auto">
+            <label
+              for="color"
+              class=""
+            >
+              Колір тексту:
+            </label>
+          </div>
+  
+          <div class="col-auto ">
+            <input
+            type="color"
+            name="colorPicker"
+            id="colorPicker"
+            value="#00FF00"
+          >
+          </div>
+        </div>
+  
+        <div class="row g-3 p-2">
+          <div class="col-auto">
+            <label class="">
+              Cимволи:
+            </label>
+          </div>
+  
+          <div class="col-auto">
+            <input
+              class="form-check-input"
+              type="radio"
+              id="lat"
+              name="symbol"
+              value="latine"
+
+            >
+            <label for="lat">Латинські</label>
+          </div>
+  
+          <div class="col-auto">
+            <input
+              class="form-check-input"
+              type="radio"
+              id="chinese"
+              name="symbol"
+              value="chinese"
+            >
+            <label for="chinese" class="form-check-label">Ієрогліфи</label>
+          </div>
+        </div>
+  
+        <div class="row g-1 p-2">
+          <div class="col-auto">
+            <button class="submit__btn submit__close btn btn-primary" type="button">Submit</button>
+          </div>
+        </div>
+  
+      </form>
+  
+    </div>
+    <header class="header">
+        <button class="header__button btn btn-outline-primary">Settings</button>
+    </header>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
